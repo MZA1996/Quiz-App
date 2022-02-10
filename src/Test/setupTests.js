@@ -27,7 +27,7 @@ const TestProviders = ({ initState, defaultState }) => {
         quizReducer:testReducer,
         user: testReducerTwo
       })
-    const testStore = createStore(testReducer, applyMiddleware(thunk))
+    const testStore = createStore(rootReducer, applyMiddleware(thunk))
     return ({ children }) => (
         <Provider store={testStore}>
             { children }

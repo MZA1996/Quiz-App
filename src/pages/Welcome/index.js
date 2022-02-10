@@ -125,7 +125,7 @@ const Welcome = () => {
   const classes = useStyles();
 
   return (
-    <div id="welcome" className={classes.mainStyle}>
+    <div role="welcome" id="welcome" className={classes.mainStyle}>
       <Box className={classes.box}>
       <Card className={ classes.cardStyle }>
       <CardContent >
